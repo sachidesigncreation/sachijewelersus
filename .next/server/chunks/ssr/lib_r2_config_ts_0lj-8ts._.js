@@ -1,0 +1,3 @@
+module.exports=[79797,a=>{"use strict";let b={BUCKET_NAME:process.env.R2_BUCKET||"sachi",CDN_URL:"",PUBLIC_URL:"",PREFIX:"sachi_jewellers"};function c(a){let c=a.startsWith("/")?a.slice(1):a;return b.CDN_URL?`${b.CDN_URL}/${c}`:b.PUBLIC_URL?`${b.PUBLIC_URL}/${c}`:`/api/r2-image/${c}`}a.s(["getR2AssetUrl",0,c,"normalizeR2Image",0,function(a){return a?a.startsWith("http")||a.startsWith("/api/r2-image/")?a:c(a.startsWith("/")?a.slice(1):a):null}])}];
+
+//# sourceMappingURL=lib_r2_config_ts_0lj-8ts._.js.map
